@@ -1,0 +1,48 @@
+.smeagol {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+.smeagol > .picture {
+  border-radius: 50%;
+}
+
+
+@media screen and (min-width: 790px) {
+  .smeagol > .picture{
+    max-width: 400px;
+  }
+  .smeagol > .quote {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 789px) {
+  .smeagol > .picture{
+    max-width: 200px;
+  }
+  .smeagol > .quote {
+    font-size: 22px;
+  }
+}
+
+.smeagol > .quote {
+  max-width: 100%;
+  text-align: center;
+  margin: 40px;
+}
+.refresh {
+  font-weight: bold;
+  font-size: 20px;
+  color: crimson;
+  border: crimson 1px solid;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
